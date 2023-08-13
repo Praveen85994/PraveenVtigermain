@@ -32,8 +32,8 @@ public class Baseclass {
 	public void bcConfig() throws Throwable{
 		String BROWSER=futil.getDataFromProperty("browser");
 	//for run in cmd	//String BROWSER=System.getProperty("browser");//for run in runtime cmd
-		String BROWSER=System.getProperty("browser");
-		String URL=System.getProperty("url");
+		//String BROWSER=System.getProperty("browser");
+		//String URL=System.getProperty("url");
 		if(BROWSER.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			 driver=new ChromeDriver();
